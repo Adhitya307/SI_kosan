@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9fbfc url('/images/kosan-register-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: #ffffffee;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #27ae60;
+}
+
+.register-options {
+    margin-top: 15px;
+}
+
+.register-options a {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.error {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
