@@ -28,3 +28,10 @@ $routes->get('/forgot-password', 'Auth::forgotPasswordForm');
 $routes->post('/forgot-password', 'Auth::sendResetToken');
 $routes->get('/reset-password', 'Auth::resetPasswordForm');
 $routes->post('/reset-password', 'Auth::updatePasswordFromToken');
+
+$routes->get('/kamar', 'Kamar::index');
+$routes->get('/kamar/create', 'Kamar::create');
+$routes->post('/kamar/store', 'Kamar::store');
+$routes->get('/kamar/edit/(:num)', 'Kamar::edit/$1');
+$routes->post('/kamar/update/(:num)', 'Kamar::update/$1');
+$routes->get('/kamar/delete/(:num)', 'Kamar::delete/$1');
